@@ -52,7 +52,7 @@ class _CounterBtnState extends State<CounterBtn> {
                     });
                   },
                   child: Icon(
-                    Icons. ,
+                    Icons.remove ,
                     color: Color.fromARGB(255, 243, 53, 10),
                     size: 35.0,
                   ),
