@@ -85,14 +85,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Create Toggle Button",style: TextStyle(
-          // backgroundColor: Colors.orange,
+          // backgroundColor: Colors.orange, 
           fontSize: 22
         ),),
       ),
       body: _bodyWidget(),
       floatingActionButton: FloatingActionButton(
         child: Icon(
-          Icons.add,
+          Icons.add, 
           color: Colors.white,
         ),
         onPressed: _changeText,
