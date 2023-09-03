@@ -46,6 +46,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/about_page.dart';
+import 'package:flutter_application_1/form_page.dart';
 import 'package:flutter_application_1/home_page.dart';
 
 // import 'packege:flutter_application_1/about_page.dart';
@@ -61,10 +62,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       title: "new page",
-      initialRoute: "/",
+      initialRoute: "/form",
       routes: {
         "/": (context) => HomePage(),
-        "/about": (context) => AboutPage()
+        "/about": (context) => AboutPage(),
+        "/form":(context) => FormPage()
       },
     );
   }
