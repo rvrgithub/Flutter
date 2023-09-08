@@ -12,6 +12,12 @@ class _FormPageState extends State<FormPage> {
   final _usernameControllar = TextEditingController();
   final _emailContrller = TextEditingController();
   final __phoneNoController = TextEditingController();
+
+  // ...................... onFoucse Node....
+  final _nameFocus = FocusNode();
+  final _emailFocus = FocusNode();
+  final _passwordFocus = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +29,12 @@ class _FormPageState extends State<FormPage> {
               child: Column(
                 children: [
                   TextFormField(
+                    // focusNode: _nameFocus,
                     controller: _usernameControllar,
+                    // onFieldSubmitted: (value) {
+                    //   _nameFocus.unfocus();
+                    //   FocusScope.of(context).requestFocus(_emailFocus);
+                    // },
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(4.0))),
@@ -31,7 +42,7 @@ class _FormPageState extends State<FormPage> {
                     ),
                     validator: (value) {
                       if (value?.isEmpty ?? true) {
-                        return 'Enter User Name';
+                        return 'Enter Your Name';
                       }
                       return null;
                     },
@@ -59,11 +70,11 @@ class _FormPageState extends State<FormPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                      labelText: 'Enter your phone_no.',
+                      labelText: 'Enter your Password.',
                     ),
                     validator: (value) {
                       if (value?.isEmpty ?? true) {
-                        return 'Enter Your Phone No.';
+                        return 'Enter Your Password ...';
                       }
                       return null;
                     },
