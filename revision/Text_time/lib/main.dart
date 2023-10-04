@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_2/land_pag.dart';
 import 'package:test_2/sign_page.dart';
 void main() {
   runApp(const MyApp());
@@ -118,9 +119,10 @@ class _MyAppState extends State<MyApp> {
         //   ),
         // ),
 
-        initialRoute: '/sign_page',
+        initialRoute: '/landPage',
         routes: {
           "/sign_page": (content)=> SignPage(),
+          "/landPage" :(context)=> landPage(),
           }
       // ),
     );

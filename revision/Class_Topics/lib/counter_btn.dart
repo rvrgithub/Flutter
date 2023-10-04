@@ -12,7 +12,7 @@ class _CounterBtnState extends State<CounterBtn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(title: Text("create counter buton")),
+      // appBar: AppBar(title: Text("create counter button")),
       body: Center(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

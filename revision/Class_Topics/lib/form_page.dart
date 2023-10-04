@@ -61,9 +61,7 @@ class _FormPageState extends State<FormPage> {
                         ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(content: Text("Enter Your Email")));
                       }
-                      return null;
-                    },
-                  ),
+                      return null;  },      ),
                   SizedBox(height: 20),
                   TextFormField(
                     controller: __phoneNoController,
@@ -74,11 +72,8 @@ class _FormPageState extends State<FormPage> {
                     ),
                     validator: (value) {
                       if (value?.isEmpty ?? true) {
-                        return 'Enter Your Password ...';
-                      }
-                      return null;
-                    },
-                  ),
+                        return 'Enter Your Password ...';      }
+                      return null;    },  ),
                   SizedBox(height: 20),
                   Container(
                     width: double.infinity,
@@ -87,9 +82,7 @@ class _FormPageState extends State<FormPage> {
                     child: ElevatedButton(
                         onPressed: () {
                           if (_formKey.currentState?.validate() ?? true) {
-                            print("succes");
-                          }
-                        },
+                            print("succes"); }  },
                         child: Text("Submit")),
                   )
                 ],

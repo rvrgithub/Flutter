@@ -13,7 +13,7 @@ class SignPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // Image.asset("/assets/bgimg.png"),
+    
         ],
       ),
     );
