@@ -28,39 +28,41 @@ class _SlidCardsState extends State<SlidCards> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title:Text("slide Cards"),
+      appBar: AppBar(
+        title: Text("slide Cards"),
       ),
-    body: Center(
-      child: Column(
-        children: [
-          Expanded(child: PageView.builder(
-            
-          itemCount:SplashData.length , 
-          itemBuilder:(context, index){
-            return ScreenCards(
-              text: SplashData[index]['text'],
-              image: SplashData[index]['image'],
-              );
-            )
-          }
-          )),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Expanded(
+                child: PageView.builder(
+                    itemCount: SplashData.length,
+                    itemBuilder: (context, index) {
+                      return ScreenCards(
+                        text: SplashData[index]['text'],
+                        image: SplashData[index]['image'],
+                      );
+                    })),
+          ],
+        ),
       ),
-    ),
     );
   }
 }
 
-
 class ScreenCards extends StatelessWidget {
-final String text;
-final String image;
+  final String text;
+  final String image;
 
- ScreenCards({required this.text , required this.image});
+  ScreenCards({required this.text, required this.image});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+  children: [
+    Text(text),
+    Image.asset(image)
+  ],
+    );
   }
 }
