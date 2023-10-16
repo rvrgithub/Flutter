@@ -31,7 +31,7 @@
 25.Icon   ✅
 26.Checkbox    .
 27.Radio   .
-28.Stack    .
+28.Stack    ✅
 29.InkWell
 30.Api call and render
 31.Pick image from gallery and camera

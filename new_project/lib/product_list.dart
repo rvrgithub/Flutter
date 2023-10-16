@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_project/car_page.dart';
+import 'package:new_project/Products/bike_page.dart';
+import 'package:new_project/Products/car_page.dart';
 
 class ProductsList extends StatefulWidget {
   const ProductsList({super.key});
@@ -39,9 +40,9 @@ class _ProductsListState extends State<ProductsList> {
                   ),
                   Row(
                     children: [
-                      Image.network(
-                          "https://img.freepik.com/premium-photo/color-blue-green-american-luxury-classic-muscle-car-mustang-free-download-images_63106-1544.jpg"),
-                      Text("Car 1"),
+                      Container(
+                        child: BikePage(),
+                      )
                     ],
                   ),
                   Row(
