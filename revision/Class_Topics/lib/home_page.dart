@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/drawer_nav.dart';
 import 'package:flutter_application_1/counter_btn.dart';
 
-// import "package:h"
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
